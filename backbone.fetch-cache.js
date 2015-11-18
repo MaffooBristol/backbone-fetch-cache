@@ -160,6 +160,8 @@
   function reset() {
     // Clearing all cache items
     Backbone.fetchCache._cache = {};
+    // Reset the local storage.
+    Backbone.fetchCache.setLocalStorage();
   }
 
   function setLocalStorage() {
